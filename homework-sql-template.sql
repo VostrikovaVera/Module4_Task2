@@ -65,6 +65,7 @@ GO
 SELECT TerritoryID, SUM(CommissionPct) AS 'SUM'
 FROM Sales.SalesPerson
 GROUP BY TerritoryID
+HAVING SUM(CommissionPct) > 0
 
 GO
 
